@@ -19,6 +19,7 @@ const usuariosSchema = new mongoose.Schema({
     },
     rol : {
         type: String,
+        enum: ['admin', 'user'],
         required: true
     }
 });
